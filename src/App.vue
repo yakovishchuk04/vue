@@ -13,14 +13,14 @@
 
 
 <script>
-import HeaderApp from '@/components/HeaderApp.vue'
-import UnderHeader from '@/components/UnderHeader.vue'
-import FeaturedApp from '@/components/FeuturedApp.vue'
-import RecomendationApp from '@/components/RecomendationApp.vue'
-import WorkshopApp from '@/components/WorkshopApp.vue'
-import TeachingApp from '@/components/TeachingApp.vue'
-import ArticlesApp from '@/components/ArticlesApp.vue'
-import FooterApp from '@/components/FooterApp.vue'
+import HeaderApp from '@/components/header/HeaderApp.vue'
+import UnderHeader from '@/components/underheader/UnderHeader.vue'
+import FeaturedApp from '@/components/featured/FeuturedApp.vue'
+import RecomendationApp from '@/components/recomendation/RecomendationApp.vue'
+import WorkshopApp from '@/components/workshop/WorkshopApp.vue'
+import TeachingApp from '@/components/teaching/TeachingApp.vue'
+import ArticlesApp from '@/components/articles/ArticlesApp.vue'
+import FooterApp from '@/components/footer/FooterApp.vue'
 export default {
   name: 'App',
   components: {
