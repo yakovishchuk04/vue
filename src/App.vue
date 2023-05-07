@@ -1,16 +1,37 @@
 <template>
-	<div id="app">
 		<HeaderApp />
-	</div>
+		<main>
+			<UnderHeader />
+			<FeaturedApp />
+			<RecomendationApp />
+			<WorkshopApp />
+			<TeachingApp />
+			<ArticlesApp />
+		</main>
+		<FooterApp />
 </template>
 
 
 <script>
 import HeaderApp from '@/components/HeaderApp.vue'
+import UnderHeader from '@/components/UnderHeader.vue'
+import FeaturedApp from '@/components/FeuturedApp.vue'
+import RecomendationApp from '@/components/RecomendationApp.vue'
+import WorkshopApp from '@/components/WorkshopApp.vue'
+import TeachingApp from '@/components/TeachingApp.vue'
+import ArticlesApp from '@/components/ArticlesApp.vue'
+import FooterApp from '@/components/FooterApp.vue'
 export default {
   name: 'App',
   components: {
-		HeaderApp
+		HeaderApp,
+		UnderHeader,
+		FeaturedApp,
+		RecomendationApp,
+		WorkshopApp,
+		TeachingApp,
+		ArticlesApp,
+		FooterApp
   }
 }
 </script>
@@ -20,6 +41,7 @@ export default {
 	*,
 	*::after,
 	*::before{ 
+		box-sizing: border-box;
 	}
 	#app{
     font-family: 'Source Sans Pro', sans-serif;
@@ -37,7 +59,20 @@ export default {
 	li{
 		list-style: none;
 	}
+	.btn-black:hover {
+	color: #57D9A6;
+	background-color: #161631;
+}
 
+.btn-black-two:hover {
+	color: #57D9A6;
+	background-color: #303064;
+}
+
+.btn-white:hover {
+	color: #57D9A6;
+	background-color: #1C1C33;
+}
 .container {
     max-width: 1296px;
     margin: 0 auto;
@@ -83,6 +118,4 @@ export default {
 .default-learn-more:hover{
     color:#23233B;
 }
-
-
 </style>
